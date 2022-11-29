@@ -1,0 +1,96 @@
+.carousel-container {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 1000px;
+    position: relative;
+    box-shadow: 0 0 30px -20px #223344;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    z-index: 0;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .mySlides img {
+    display: block;
+    width: 100%;
+  }
+  
+  /* image gradient overlay [optional] */
+  /*  .mySlides::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+      background-image: linear-gradient(-45deg, rgba(110, 0, 255, .1), rgba(70, 0, 255, .2));
+  } */
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: auto;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 8px 8px 0;
+    background: rgba(173, 216, 230, 0.1);
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(173, 216, 230, 0.3);
+  }
+  
+  .dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dots {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 0 4px;
+    background-color: rgba(173, 216, 230, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dots:hover {
+    background-color: rgba(173, 216, 230, 0.8);
+  }
+  
+  /* transition animation */
+  .animate {
+    -webkit-animation-name: animate;
+    -webkit-animation-duration: 1s;
+    animation-name: animate;
+    animation-duration: 2s;
+  }
+  
+  @keyframes animate {
+    from {
+      transform: scale(1.1) rotateY(10deg);
+    }
+    to {
+      transform: scale(1) rotateY(0deg);
+    }
+  }
+  
+
